@@ -24,10 +24,13 @@ plt.axis('off')
 
 plt.title('Wafer Mapping', loc = 'left')
 for i, txt in enumerate(z):
-    plt.annotate(txt, (x[i], y[i]), size = 8)
+    plt.annotate(txt, (x[i], y[i]), size = 12)
+
 
 Info = "Avarage: " + str(np.mean(z)) + '\n' + "Stddev: " + str(np.std(z)) + '\n' + "Range: " + str(np.max(z)-np.min(z))
 plt.text(100,-20, Info, fontsize=12)
 
 plt.savefig('Film Thickness Profile.png')
 plt.show()
+
+p
